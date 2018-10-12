@@ -1,0 +1,300 @@
+﻿.form-part
+{
+    margin-bottom: 20px;
+    padding-right: 64px;
+    padding-left: 16px;
+}
+
+.form-part:hover
+{
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+    border-color: transparent;
+    position: relative;
+}
+
+.form-part .form-part-header
+{
+    line-height: 32px;
+    padding-left: 8px;
+}
+
+.form-part .form-part-header span
+{
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-left: 2px solid #3399ff;
+    padding-left: 10px;
+}
+
+.wrapper
+{
+    min-width: 1150px;
+    margin-left: 10px;
+    margin: auto;
+}
+
+.wrapperLayer
+{
+    min-width: 800px;
+    margin-left: 10px;
+    margin: auto;
+}
+
+.wrapper-container {
+    padding: 10px 15px;
+    position: relative;
+}
+
+.audit-wrapper
+{
+    width: 1150px;
+    margin-left: 8px;
+    margin: auto;
+}
+
+[v-cloak]
+{
+    display: none;
+}
+/****************************页面标题*************************************/
+#pageTitle
+{
+    border: 1px solid #eee;
+    border-bottom-right-radius: 8px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+    border-color: transparent;
+    position: relative;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight1: bold;
+    width: 99.6%;
+}
+
+#pageTitle span
+{
+    margin-left: 10px;
+    border-left: 2px solid #3399ff;
+    padding-left: 10px;
+}
+
+#pageNotice
+{
+    padding: 10px 10px;
+}
+.ivu-table-tip table td
+{
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: orange;
+    vertical-align: top;
+}
+/***************************Tabs 标签页样式*****************************************/
+.demo-tabs-style2 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab
+{
+    border-radius: 0;
+    background: #fff;
+}
+.demo-tabs-style2 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active
+{
+    border-top: 1px solid #3399ff;
+}
+.demo-tabs-style2 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active:before
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #3399ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ivu-tabs
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow: auto;
+}
+
+/*******************************VUE 表格样式 控制字段太长****************************************/
+.table-info-column div
+{
+    word-spacing: normal;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/*************************************start Tas 切换*******************************************/
+div .divMenu_TabNav
+{
+    height: 40px;
+    margin-top: 10px;
+    border-bottom: 3px solid #079de1;
+}
+
+div .divMenu_TabNav .divMenu_TabNavHover
+{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+    color: #ffffff;
+    background-color: #079de1;
+    cursor: pointer;
+}
+div .divMenu_TabNav .divMenu_TabNavHover a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+div .divMenu_TabNav .divMenu_TabNavMin
+{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #aaaaaa;
+    cursor: pointer;
+}
+div .divMenu_TabNav .divMenu_TabNavMin a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+div .divMenu_TabNav .divMenu_TabRight
+{
+    height: 40px;
+    float: right;
+}
+.divMenu_TabTitle
+{
+    height: 16px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    font-size: 12px;
+    color: #c09853;
+}
+/*************************************ent Tas 切换*******************************************/
+
+/************************************* Start 翻页样式**************************************/
+.ivu-page.mini .ivu-page-next, .ivu-page.mini .ivu-page-prev
+{
+    margin: 0px;
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 3px;
+    border: 0px;
+}
+.ivu-page.mini .ivu-page-item
+{
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px;
+    border: 0px;
+}
+.ivu-page.mini .ivu-page-item-jump-next, .ivu-page.mini .ivu-page-item-jump-prev
+{
+    margin-top: 4px;
+}
+/************************************* End 翻页样式***********************************/
+
+/********************************** Start 信息录入时，提醒说明样式************************/
+.header-img{ 
+    background-image: url(../styles/images/header-title.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px; border:0px; float:left;
+}
+.header-titile
+{ padding-left:8px; font-size:15px; font-weight:bold;
+    
+    }
+    
+.tip
+{
+    cursor: pointer;
+   /*background-image: url(../styles/images/tip.png);*/
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.ivu-poptip-inner
+{
+    white-space: normal;
+    width: 300px;
+    box-shadow: 0 1px 6px #ffd700;
+}
+/********************************** End 信息录入时，提醒说明样式************************/
+
+/***********************************Start 面包屑样式 ***********************************/
+.set-funnel-title {
+    overflow: hidden;
+    padding: 10px 0 10px;
+}
+.funnel-title-h {
+    color: #464c5b;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    float: left;
+}
+.set-funnel-title-h {
+    color: #464c5b;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    float: left;
+}
+/***********************************End 面包屑样式************************/
+
+
+
+/***********************************loading样式 ***********************************/
+ .demo-spin-icon-load{
+        animation: ani-demo-spin 1s linear infinite;
+        }
+@keyframes ani-demo-spin {
+            from { transform: rotate(0deg);}
+            50%  { transform: rotate(180deg);}
+            to   { transform: rotate(360deg);}
+        }
+.demo-spin-col{
+            height: 100px;
+            position: relative;
+            border: 1px solid #eee;
+        }
+        
+/***********************************loading样式 ***********************************/
+
+
+/***************************/
+.heart-creditEvaluation .pc-year{ background-image:url(../styles/images/year.png); background-repeat:no-repeat; background-position:left center;}
+.heart-creditEvaluation .pc-heart{ background-image:url(../styles/images/heart.png); background-repeat:no-repeat; background-position:left center;}
+.heart-creditEvaluation .pc-time{ background-image:url(../styles/images/time.png); background-repeat:no-repeat; background-position:left center;}
+.heart-creditEvaluation li{ padding-left:25px;line-height:30px; font-size:14px; color:#666;}

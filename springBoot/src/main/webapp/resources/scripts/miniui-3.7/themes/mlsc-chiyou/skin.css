@@ -1,0 +1,954 @@
+﻿*
+{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: "Helvetica Neue" , "Luxi Sans" , "DejaVu Sans" , Tahoma, "Hiragino Sans GB" , STHeiti, "Microsoft YaHei";
+}
+html
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    width: 100%;
+    height: 99%;
+    color: #333333;
+    background-color1: yellow;
+    background-color1: white;
+}
+
+input
+{
+    background-color: transparent;
+}
+
+/*::-webkit-scrollbar
+{
+    width: 15px;
+    height: 15px;
+}
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 8px;
+    background-color: rgba(252,252,252,0.4);
+}*/
+
+a:link
+{
+    color: #0099CC;
+    text-decoration: none;
+}
+/* 未被访问的链接 */
+a:visited
+{
+    color: #0099CC;
+    text-decoration: none;
+}
+/* 已被访问的链接 */
+a:hover
+{
+    color: #16a8ef;
+    text-decoration: none;
+}
+/* 鼠标指针移动到链接上 */
+a:active
+{
+    color: #0389B9;
+    text-decoration: none;
+}
+/* 正在被点击的链接 */
+
+
+/* base
+==========================================*/
+.app-header
+{
+    background: #dae5bb;
+}
+.app-toolbar, .bg-toolbar
+{
+    background: #fff;
+}
+.mini-modal
+{
+    background: #fff;
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+.mini-mask-background
+{
+    background: #fff;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.mini-popup, .mini-window, .mini-menu-open
+{
+    /*box-shadow:rgba(0,​ 0,​ 0,​ 0.6) 0px 6px 12px 0px;*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* tools
+==========================================*/
+
+/* popup
+==========================================*/
+.mini-popup
+{
+    border-color: #ccc;
+}
+
+/* toolbar
+==========================================*/
+.mini-toolbar
+{
+    background-color: transparent;
+    background-image: url();
+    border-color: #E1E6EB;
+}
+.separator
+{
+    border-color: #E1E6EB;
+}
+
+
+/* button
+==========================================*/
+.mini-button
+{
+    font-family: "Helvetica Neue" , "Luxi Sans" , "DejaVu Sans" , Tahoma, "Hiragino Sans GB" , STHeiti, "Microsoft YaHei";
+    color: #ffffff;
+    background-color: transparent;
+    background-image: url();
+    background-color: #0099cc;
+    border-color: #0099cc;
+}
+body .mini-button
+{
+    color: #ffffff;
+}
+body a:hover.mini-button, body a:hover.mini-button-plain
+{
+    color1: #ffffff;
+    background-image: url();
+    background-color: #28B5D6;
+    border-color: #28B5D6;
+}
+body .mini-button-pressed, body a:hover.mini-button-pressed, body .mini-button-checked, body a:hover.mini-button-checked, body a.mini-button-popup, body a:hover.mini-button-popup
+{
+    color: #ffffff;
+    background-color: #28B5D6;
+    background-image: url();
+    border-color: #28B5D6;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+body a.mini-button-disabled, body a:hover.mini-button-disabled
+{
+    color: #333333;
+    border-color: #dddddd;
+    background: transparent;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+body .mini-button-plain
+{
+    color: #333333;
+}
+
+/* button.aux
+==========================================*/
+.aux.mini-button
+{
+    color: #333333;
+    background-color: #F7F7F7;
+    border-color: #dddddd;
+}
+a:hover.aux.mini-button, .aux.mini-button.mini-button-plain
+{
+    background-color: #FFFFFF;
+    border-color: #dddddd;
+}
+.aux.mini-button-pressed, a:hover.aux.mini-button-pressed, .aux.mini-button-checked, a:hover.aux.mini-button-checked, a.aux.mini-button-popup, a:hover.aux.mini-button-popup
+{
+    color: #333333;
+    background-color: #FFFFFF;
+    border-color: #dddddd;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+a.aux.mini-button-disabled, a:hover.aux.mini-button-disabled
+{
+    color: #333333;
+    border-color: #dddddd;
+    background-color: transparent;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* button.skip
+==========================================*/
+.skip.mini-button
+{
+    color: #ffffff;
+    background-color: #8D8D8D;
+    border-color: #8D8D8D;
+}
+a:hover.skip.mini-button
+{
+    background-color: #8D8D8D;
+    border-color: #8D8D8D;
+}
+.skip.mini-button-pressed, a:hover.skip.mini-button-pressed, .skip.mini-button-checked, a:hover.skip.mini-button-checked, a.skip.mini-button-popup, a:hover.skip.mini-button-popup
+{
+    color: #ffffff;
+    background-color: #8D8D8D;
+    border-color: #8D8D8D;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+a.skip.mini-button-disabled, a:hover.skip.mini-button-disabled
+{
+    color: #333333;
+    border-color: #dddddd;
+    background-color: transparent;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* button.imp
+==========================================*/
+.imp.mini-button
+{
+    color: #ffffff;
+    background-color: #FF9900;
+    border-color: #FF9900;
+}
+a:hover.imp.mini-button
+{
+    background-color: #FF9900;
+    border-color: #FF9900;
+}
+.imp.mini-button-pressed, a:hover.imp.mini-button-pressed, .imp.mini-button-checked, a:hover.imp.mini-button-checked, a.imp.mini-button-popup, a:hover.imp.mini-button-popup
+{
+    color: #ffffff;
+    background-color: #FF9900;
+    border-color: #FF9900;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+a.imp.mini-button-disabled, a:hover.imp.mini-button-disabled
+{
+    color: #333333;
+    border-color: #dddddd;
+    background-color: transparent;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* textbox
+==========================================*/
+.mini-textbox-border
+{
+    background-color: transparent;
+    background-color: white;
+    border-color: #cccccc;
+    box-shadow1: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+.mini-textbox-focus .mini-textbox-border
+{
+    /*background-color: #fff;*/
+    border-color: #66AFE9;
+}
+.mini-required .mini-textbox-border, .mini-required .mini-buttonedit-border
+{
+    background: #FFFFE6;
+}
+.mini-error .mini-textbox-border, .mini-error .mini-buttonedit-border, .mini-error .mini-textboxlist-border
+{
+    border-color: #FF3300;
+    background-color: transparent;
+}
+.mini-textbox-input
+{
+}
+
+/* buttonedit
+==========================================*/
+.mini-buttonedit-border
+{
+    background-color: transparent;
+    background-color: white;
+    border-color: #cccccc;
+    box-shadow1: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+.mini-buttonedit-focus .mini-buttonedit-border
+{
+    /*background-color: #fff;*/
+    border-color: #66AFE9;
+}
+
+.mini-buttonedit-height .mini-buttonedit-buttons
+{
+    margin-top: -16px;
+}
+.mini-buttonedit-input
+{
+    font-family: "Helvetica Neue" , "Luxi Sans" , "DejaVu Sans" , Tahoma, "Hiragino Sans GB" , STHeiti, "Microsoft YaHei";
+    color: #555555;
+}
+.mini-buttonedit-button
+{
+    background: transparent;
+    border-color: #cccccc;
+}
+.mini-buttonedit-close
+{
+    border: 1px solid transparent;
+}
+.mini-buttonedit-close:hover, .mini-buttonedit-button-hover, .mini-buttonedit-hover .mini-buttonedit-trigger
+{
+    border: 1px solid #ababab;
+    background-color: transparent;
+    background-image: url();
+    border-color: transparent;
+}
+.mini-buttonedit-button-pressed, .mini-buttonedit-popup
+{
+    background-color: transparent;
+    border-color: #66AFE9;
+}
+.mini-buttonedit-trigger
+{
+    border-color: transparent;
+}
+/*.mini-popupedit .mini-buttonedit-trigger .mini-buttonedit-icon
+{
+    background: url(images/buttonedit/arrow.gif) no-repeat 1px 2px;
+}*/
+.mini-datepicker .mini-buttonedit-trigger .mini-buttonedit-icon
+{
+    background: url(images/buttonedit/date.gif) no-repeat 50% 50%;
+}
+.mini-buttonedit-up span, .mini-buttonedit-down span
+{
+    background: url(images/buttonedit/spinner_arrows.png) no-repeat -6px 50%;
+}
+.mini-buttonedit-down span
+{
+    background-position: -34px 50%;
+}
+
+/* textboxlist
+==========================================*/
+.mini-textboxlist-border
+{
+    border-color: #cccccc;
+}
+.mini-textboxlist-focus .mini-textboxlist-border
+{
+    /*background-color: #fff;*/
+    border-color: #66AFE9;
+}
+.mini-textboxlist-item
+{
+}
+
+/* htmlfile
+==========================================*/
+.mini-htmlfile .mini-buttonedit-button
+{
+    background: #e5f0c9;
+    border-color: #cccccc;
+}
+
+/* panel
+==========================================*/
+.mini-panel-border
+{
+    border-color: #E5E5E5;
+}
+.mini-panel-header
+{
+    background1: #dae5bb;
+    background: #F5F6FA;
+    font-weight: normal;
+    border-color: #E5E5E5;    
+}
+.mini-panel-toolbar, .mini-panel-footer
+{
+    background: #fff;
+    border-color: #E5E5E5;
+}
+
+/* window
+==========================================*/
+.mini-window .mini-panel-header
+{
+    background: #FFFFFF;
+}
+.mini-window .mini-panel-footer
+{
+    background: #fff;
+}
+
+/* outlookbar
+==========================================*/
+.mini-outlookbar-border
+{
+    border-color: #66AFE9;
+}
+.mini-outlookbar .mini-outlookbar-groupHeader
+{
+    background: #dae5bb;
+    border-color: #66AFE9;
+}
+.mini-outlookbar .mini-outlookbar-hover
+{
+    background: #e5f0c9;
+}
+.mini-outlookbar-expand .mini-outlookbar-groupHeader
+{
+    background: #dae5bb;
+}
+.mini-outlookbar .mini-outlookbar-groupTitle
+{
+    font-weight: normal;
+}
+.mini-outlookbar .mini-outlookbar-group
+{
+    border-color: #66AFE9;
+}
+.mini-outlookbar .mini-outlookbar-groupBody
+{
+    border-color: #66AFE9;
+}
+.mini-outlookbar-view2 .mini-outlookbar-groupHeader
+{
+    border-color: #66AFE9;
+}
+.mini-outlookbar-view2 .mini-outlookbar-groupBody
+{
+    background: #fff;
+}
+.mini-outlookbar-view3 .mini-outlookbar-group
+{
+    border-color: #66AFE9;
+}
+ 
+/* splitter
+==========================================*/
+.mini-splitter-border
+{
+    border-color: #66AFE9;
+}
+.mini-splitter .mini-splitter-pane1
+{
+    border-color: transparent;
+}
+.mini-splitter .mini-splitter-pane2
+{
+    border-color: transparent;
+}
+
+/* layout
+==========================================*/
+.mini-layout-border
+{
+    border-color: #66AFE9;
+}
+.mini-layout-region
+{
+    border-color: #66AFE9;
+}
+.mini-layout-region-header
+{
+    background: #dae5bb;
+    border-color: #66AFE9;
+}
+.mini-layout-proxy
+{
+    border-color: #66AFE9;
+    background: #dae5bb;
+}
+.mini-layout-proxy-hover
+{
+    background: #e5f0c9;
+}
+ 
+
+/* menu
+==========================================*/
+.mini-menu
+{
+    background: #fff;
+}
+.mini-menu-border
+{
+    border-color: #66AFE9;
+}
+.mini-menuitem-hover, .mini-menu-popup
+{
+    border-color: #cccccc;
+    background: #e5f0c9;
+}
+.mini-menuitem-selected
+{
+    border-width: 0px;
+    border-color: #cccccc;
+    background: #0099CC;
+}
+.mini-menuitem-text, .mini-menuitem-text a
+{
+}
+.mini-separator
+{
+    border-color: #cccccc;
+}
+.mini-menu-horizontal .mini-menu-inner
+{
+    background: #fff;
+}
+.mini-menu-horizontal .mini-menuitem-allow
+{
+    background: url(images/menu/menu_arrows.png) no-repeat -2px -4px;
+}
+
+/* pager
+==========================================*/
+.mini-pager
+{
+    background-color: transparent;
+    background-color1: #fff;
+    border-color: #E1E6EB;
+}
+
+/* grid
+==========================================*/
+.mini-grid-cell-inner, .mini-grid-headerCell-inner
+{
+    font-family: "Helvetica Neue" , "Luxi Sans" , "DejaVu Sans" , Tahoma, "Hiragino Sans GB" , STHeiti, "Microsoft YaHei";
+}
+.mini-grid-headerCell-inner
+{
+    color: #666666;
+}
+.mini-grid-border
+{
+    border-color: #E1E6EB;
+}
+.mini-grid-header
+{
+    background-color: transparent;
+}
+.mini-grid-headerCell, .mini-grid-topRightCell, .mini-grid-columnproxy
+{
+    border-color: #E1E6EB;
+    background-color1: transparent;
+    background-color: #F5F6FA;
+    background-image: url();
+}
+.mini-grid-viewport
+{
+    background-color: transparent;
+}
+.mini-grid-cell
+{
+    border-color1: #E1E6EB;
+    border-top1: 1px solid transparent;
+}
+.mini-grid-footer, .mini-grid-pager, .mini-grid-filterRow
+{
+    border: 0px solid #E1E6EB;
+    background-color: transparent;
+    background-color1: #fff;
+    background-image: url();
+}
+.mini-grid-header-over
+{
+    background-color: transparent;
+}
+html body .mini-grid-row-hover
+{
+    background-color: transparent;
+}
+html body .mini-grid-row-selected
+{
+    background-color: #DFE8F6;
+}
+html body .mini-grid-row-selected .mini-grid-cell
+{
+    border-top1: 1px solid #66afe9;
+    border-bottom1: 1px solid #66afe9;
+}
+html body .mini-grid .mini-grid-cell-selected
+{
+    background-color: transparent;
+}
+.mini-grid-emptyText
+{
+    text-align: center;
+}
+.mini-grid-emptyText span
+{
+    background-color1: Red;
+}
+
+/* tree
+==========================================*/
+.mini-tree-node-hover .mini-tree-nodeshow
+{
+    background: #e5f0c9;
+    border-color: #cccccc;
+}
+.mini-tree-selectedNode .mini-tree-nodeshow
+{
+    background: #66AFE9;
+    border-color: #cccccc;
+}
+.mini-tree-leaf
+{
+    background-image: url(images/tree/file.gif);
+}
+.mini-tree-folder
+{
+    background-image: url(images/tree/folder.gif);
+}
+.mini-tree-expand .mini-tree-folder
+{
+    background-image: url(images/tree/folder-open.gif);
+}
+
+/* listbox
+==========================================*/
+.mini-listbox-border
+{
+    background-color: transparent;
+    border-color: #ccc;
+}
+.mini-listbox-header
+{
+    background: #fff;
+    border-color: #66AFE9;
+}
+.mini-listbox-header td
+{
+    border-color: #66AFE9;
+}
+.mini-listbox-item td
+{
+    border-color: #ddd;
+    line-height: 14px;
+}
+.mini-listbox-item-hover td
+{
+    background: #1E90FF;
+    border-color: #cccccc;
+    color: White;
+}
+.mini-listbox-item-selected td
+{
+    background: #1E90FF;
+    border-color: #cccccc;
+    color: White;
+}
+
+/* tabs
+==========================================*/
+.mini-tab
+{
+    font-family: "Helvetica Neue" , "Luxi Sans" , "DejaVu Sans" , Tahoma, "Hiragino Sans GB" , STHeiti, "Microsoft YaHei";
+    color: #333333;
+}
+.mini-tabs-scrollCt, .mini-tabs-bodys
+{
+    background-color: transparent;
+    border-color: #DDDDDD;
+}
+.mini-tabs-leftButton, .mini-tabs-rightButton, .mini-tabs-tabmenu
+{
+    border-color: #66AFE9;
+    background-color: #fff;
+}
+a:hover.mini-tabs-leftButton, a:hover.mini-tabs-rightButton, a:hover.mini-tabs-tabmenu
+{
+    border-color: #66AFE9;
+    background-color: #e5f0c9;
+}
+/* top */
+.mini-tabs-space, .mini-tabs-space2
+{
+    border-bottom: 1px solid #dddddd;
+}
+.mini-tab
+{
+    background: #FBFAF8;
+    border-color: #DDDDDD;
+    color: #666666;
+}
+.mini-tab-hover
+{
+    background: #ffffff;
+    color: #0099CC;
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.075);
+}
+.mini-tab-active
+{
+    border-color: #DDDDDD;
+    border-bottom-color: #fff;
+    background: #fff;
+    border-top: 2px solid #00A2CA;
+    color: #333333;
+}
+.mini-tab-close-hover
+{
+    background-color: #66AFE9;
+}
+/* bottom */
+.mini-tabs-header-bottom .mini-tabs-space, .mini-tabs-header-bottom .mini-tabs-space2
+{
+    border-color: #66AFE9;
+}
+.mini-tabs-header-bottom .mini-tabs-bodys
+{
+    border-color: #66AFE9;
+}
+.mini-tabs-header-bottom .mini-tab-active
+{
+    border-top-color: white;
+    border-bottom-color: #66AFE9;
+}
+.mini-tabs-body-bottom
+{
+    border-color: #66AFE9;
+}
+/* left */
+.mini-tabs-header-left .mini-tabs-space, .mini-tabs-header-left .mini-tabs-space2
+{
+    border-color: #66AFE9;
+}
+.mini-tabs-header-left .mini-tabs-bodys
+{
+    border-color: #66AFE9;
+}
+.mini-tabs-header-left .mini-tab-active
+{
+    border-color: #66AFE9;
+    border-right-color: white;
+}
+.mini-tabs-body-left
+{
+    border-color: #66AFE9;
+}
+/* right */
+.mini-tabs-header-right .mini-tabs-space, .mini-tabs-header-right .mini-tabs-space2
+{
+    border-color: #66AFE9;
+}
+.mini-tabs-header-right .mini-tabs-bodys
+{
+    border-color: #66AFE9;
+}
+.mini-tabs-header-right .mini-tab-active
+{
+    border-color: #66AFE9;
+    border-left-color: white;
+}
+.mini-tabs-body-right
+{
+    border-color: #66AFE9;
+}
+
+/* tooltip
+==========================================*/
+.mini-tooltip-inner
+{
+    border-color: #ddd;
+    border-radius: 0px;
+}
+
+/* calendar
+==========================================*/
+.mini-calendar
+{
+    border-color: #ccc;
+}
+.mini-calendar-header
+{
+    background: #dae5bb;
+    border-color: #66AFE9;
+}
+.mini-calendar-footer
+{
+    border-color: #66AFE9;
+    background: #fafafa;
+}
+.mini-calendar-tadayButton, .mini-calendar-clearButton, .mini-calendar-okButton, .mini-calendar-cancelButton
+{
+    background: #dae5bb;
+    border-color: #66AFE9;
+}
+.mini-calendar-tadayButton:hover, .mini-calendar-clearButton:hover, .mini-calendar-okButton:hover, .mini-calendar-cancelButton:hover
+{
+    background: #e5f0c9;
+    border-color: #66AFE9;
+}
+.mini-calendar .mini-calendar-today
+{
+    border-color: #C00000;
+}
+.mini-calendar-daysheader td
+{
+    border-color: #cccccc;
+}
+.mini-calendar-menu
+{
+    border-color: #cccccc;
+}
+.mini-calendar-title, .mini-calendar-menu-year, .mini-calendar-menu-month
+{
+}
+.mini-calendar .mini-calendar-selected, .mini-calendar-menu-selected, a:hover.mini-calendar-menu-month, a:hover.mini-calendar-menu-year
+{
+    background: #e5f0c9;
+    border-color: #cccccc;
+}
+
+/* progressbar
+==========================================*/
+.mini-progressbar-border
+{
+    border-radius: 4px;
+    border-color: #ccc;
+}
+.mini-progressbar-bar
+{
+    background: #dae5bb;
+}
+.mini-progressbar-text
+{
+}
+
+
+
+
+
+
+
+
+
+
+/* tabs noBorder
+==========================================*/
+.noBorder .mini-tabs-scrollCt
+{
+    border-color: transparent;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    background-color: transparent;
+}
+.noBorder .mini-tabs-bodys
+{
+    border-color: #dddddd;
+}
+.noBorder td.mini-tabs-firstSpace
+{
+    border-left: 1px solid #DDDDDD;
+}
+.noBorder .mini-tabs-space
+{
+    width: 0px;
+    border-bottom: 1px solid #dddddd;
+}
+.noBorder .mini-tabs-space2
+{
+    width: 0px;
+    border-color: #66AFE9;
+}
+.noBorder .mini-tabs-space div, .noBorder .mini-tabs-space2 div
+{
+    width: 0px;
+}
+.noBorder .mini-tab
+{
+    border-left-width: 0px;
+}
+
+
+
+
+
+/* grid noHeaderCellBorder
+==========================================*/
+.mini-grid.noHeaderCellBorder .mini-grid-headerCell
+{
+    border-right: 0;
+}
+
+/* grid view
+==========================================*/
+.mini-grid.view .mini-grid-cell-inner
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #5A5A5A;
+}
+
+/* grid interlaceRow
+==========================================*/
+.interlaceRow .mini-grid-interlaceRow td
+{
+    padding: 4px 0px;
+}
+.interlaceRow .mini-grid-headerRow
+{
+    background-color: #FAFAFA;
+    line-height: 32px;
+}
+.interlaceRow .mini-grid-headerRow td
+{
+    border: 1px solid #E1E6EB;
+    border-bottom-width: 0px;
+    padding: 0px 4px;
+}
+.interlaceRow .mini-grid-footerRow
+{
+    line-height: 32px;
+}
+.interlaceRow .mini-grid-footerRow td
+{
+    border: 0px solid #E1E6EB;
+    border-top-width: 0px;
+    padding1: 0px 4px;
+    color: #666666;
+}
+
+.interlaceRow  .mini-grid-footerRow div
+{
+    border: 1px solid #dcdcdc;
+    border-top-width: 0px;
+    text-align: left; line-height: 30px;padding-left: 20px; color: #9D9D9D;
+}
+
+.interlaceRow .mini-grid-columns
+{
+    border-left: 1px solid #E1E6EB;
+}
+.interlaceRow .mini-grid-columns-view
+{
+    border-right: 1px solid #E1E6EB;
+}
+.interlaceRow .mini-grid-headerCell, .interlaceRow .mini-grid-cell
+{
+    border-top: 1px solid #E1E6EB;
+}
+.interlaceRow .mini-grid-detailRow, .interlaceRow .mini-grid-detailCell
+{
+    border-width: 0px;
+}
+.interlaceRow .mini-grid-pager
+{
+    border-width: 1px;
+}

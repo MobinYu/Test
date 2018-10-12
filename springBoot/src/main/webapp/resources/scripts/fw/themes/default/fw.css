@@ -1,0 +1,398 @@
+﻿*
+{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border-width: 0px;
+}
+html
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: Tahoma, Verdana, 宋体;
+}
+
+
+.mini-toolbar .mini-toolbar-noPadding
+{
+    position: absolute; 
+    top: -1px; 
+    left: -1px; 
+    right:-1px; 
+    bottom:-1px;
+}
+
+.asLabel .mini-textbox-border, .asLabel .mini-textbox-input, .asLabel .mini-buttonedit-border, .asLabel .mini-buttonedit-input, .asLabel .mini-textboxlist-border
+{
+    border: 0;
+    background: none;
+    cursor: default;
+}
+.asLabel .mini-buttonedit-button, .asLabel .mini-textboxlist-close
+{
+    display: none;
+}
+.asLabel .mini-textboxlist-item
+{
+    padding-right: 8px;
+}
+
+
+
+.mini-fit .mini-panel .mini-panel-border
+{
+    border-width: 0px;
+}
+
+html body .icon-reload .mini-buttonedit-icon
+{
+    background: url(../icons/reload.png) no-repeat 50% 50%;
+}
+
+html body .icon-filter .mini-buttonedit-icon
+{
+    background: url(../icons/filter.png) no-repeat 50% 50%;
+}
+
+.icon-excel
+{
+    background: url(../icons/excel.png) no-repeat;
+}
+
+.icon-downLoad
+{
+    background: url(../icons/downLoad.png) no-repeat;
+}
+
+.icon-upload
+{
+    background: url(../icons/upload.png) no-repeat;
+}
+
+.icon-import
+{
+    background: url(../icons/import.png) no-repeat;
+}
+
+
+.icon-panel-expand
+{
+    background: url(../icons/panel-expand.gif) no-repeat;
+}
+
+
+.icon-panel-collapse
+{
+    background: url(../icons/panel-collapse.gif) no-repeat;
+}
+
+.highlightSelected
+{
+    background-color: Yellow;
+}
+
+
+
+.mini-xs-active .mini-textbox
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mini-htmlfile span.mini-buttonedit-input
+{
+    overflow:hidden;
+}
+.mini-htmlfile span.mini-buttonedit-input table
+{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.mini-htmlfile span.mini-buttonedit-input table td
+{
+    padding:6px 0px;
+    line-height:18px;    
+}
+.mini-htmlfile span.mini-buttonedit-input a span
+{
+    word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+.mini-htmlfile span.mini-buttonedit-input a img
+{
+    border-width:0px;
+}
+.mini-htmlfile .mini-progressbar
+{
+    width:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:11;
+    background-color:White;
+}
+
+
+
+.mini-tabs.pages .mini-tabs-scrollCt
+{
+    border-width:0px;
+}
+.mini-pages
+{
+    overflow:hidden;
+    font-size:9pt;
+    font-family:Tahoma, Verdana, 宋体;   
+    position:relative;         
+}
+.mini-pages-body
+{
+    position:relative;
+    overflow:auto;
+    height:100%;
+}
+.mini-pages-hideOverflow
+{
+    overflow:hidden;
+}
+
+.mini-pages-bodys
+{
+    position:relative;
+    background1:white;
+    
+    padding:5px;    
+    	
+    text-align:left;
+    overflow:hidden;
+}
+
+
+
+.fwPage
+{
+    width:96%;
+    max-width1:1024px;
+    margin:0px auto;
+}
+.fwPageHeader .title
+{
+    font-size:16px;
+}
+.fwPageHeader .mini-toolbar > table > tbody > tr > td
+{
+    line-height:32px;
+    padding: 6px 0px;
+}
+
+
+.searchCondition .title
+{
+    font-size:16px;
+}
+.searchCondition .mini-checkboxlist-item, .searchCondition .mini-radiobuttonlist-item
+{
+    float: left;
+}
+.searchCondition .mini-checkboxlist, .searchCondition .mini-radiobuttonlist
+{
+    display: inline-block;
+}
+.searchCondition .overExpand
+{
+    height: 32px;
+    overflow: hidden;
+}
+.searchCondition .mini-toolbar tr:hover .overExpand
+{
+    height: auto;
+}
+
+.searchCondition .mini-toolbar > table > tbody > tr > td
+{
+    border-top: 1px dashed #E1E6EB;
+    line-height:32px;
+    padding: 6px 0px;
+}
+.searchCondition .mini-toolbar > table > tbody > tr:first-child > td
+{
+    border-top-width: 0px;
+}
+
+.searchCondition .mini-checkboxlist table label, .searchCondition .mini-radiobuttonlist table label, .searchCondition .mini-checkbox table label
+{
+    cursor: pointer;
+    padding: 0px 8px;
+}
+.searchCondition .mini-checkboxlist-item:hover, .searchCondition .mini-checkbox:hover, .searchCondition .mini-checkbox-checked, .searchCondition .mini-checkbox-checked:hover
+{
+    color: #49A2D7;
+}
+.searchCondition .mini-checkboxlist-item-selected, .searchCondition .mini-checkboxlist-item-selected:hover
+{
+    background-color: #49A2D7;
+    color: white;
+}
+.searchCondition .mini-list-icon
+{
+    display: none;
+}
+.searchCondition .clear
+{
+    line-height:30px;
+    cursor:pointer;
+    color:#ff9800;
+    margin:0px 10px;
+    display:none;
+}
+.searchCondition .multiSelectTools
+{
+    text-align: center;
+    padding-top: 6px;
+}
+.searchCondition .multiSelect .mini-checkbox-icon
+{
+    margin-right:4px;
+}
+.searchCondition .multiSelectTools .imp .mini-button-text, .searchCondition .multiSelectTools .aux .mini-button-text
+{
+    padding: 4px 10px 4px 10px;
+    padding: 5px 10px 3px 10px\9;
+    line-height: 16px;
+}   
+        
+        
+        
+
+
+.divForm
+{
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+}
+.divForm .mini-panel .mini-panel-body
+{
+    padding:0px 0px;
+}
+.divForm .mini-panel .mini-panel-header
+{
+    font-weight:normal;
+    color:#333333;
+    background-color:#F5F6FA;
+}
+.tableForm
+{
+    width:100%;
+    border-collapse: collapse;
+}
+.tableForm .header
+{
+    text-align:left;
+    background-color:#F5F6FA;
+    line-height:24px;
+    color:#333333;
+}
+.icon-formHeader
+{
+    background: url(../icons/formHeader.png) no-repeat center center;
+}
+.tableForm .footer 
+{
+    text-align:center;
+    line-height:24px;
+    color:#333333;
+}
+.tableForm th,.tableForm td
+{
+    border: solid 1px #E1E6EB;
+    padding: 8px 15px;
+}
+.tableForm th
+{
+    color:#666666;
+    font-weight:normal;
+    text-align:right;
+}
+.tableForm .formLabel
+{
+    color:#666666;
+    font-weight:normal;
+}
+.tableForm .formInput
+{
+    color:#333;
+}
+.tableForm.noBorder
+{
+    border: solid 1px #E1E6EB;
+}
+.tableForm.onlyBody
+{
+    border-width:0px;
+}
+.tableForm.noBorder tbody th,.tableForm.noBorder tbody td
+{
+    border-width:0px;
+}
+.mini.tableForm th,.mini.tableForm td
+{
+    padding: 0px 2px;
+}
+
+ 
+.formItem
+{
+    width: 90%;
+    margin: 10px auto;
+}
+.formItem .formLabel
+{
+    color:#666666;
+    line-height: 20.5pt;
+}
+.formItem .formInput
+{
+    color:#333;
+}
+.mini-lg-active .mini-col-lg-12 .formItem
+{
+    width: 97.5%;
+}
+.mini-lg-active .mini-col-lg-9 .formItem
+{
+    width: 96.7%;
+}
+.mini-lg-active .mini-col-lg-6 .formItem
+{
+    width: 95%;
+}
+.mini-md-active .mini-col-md-6 .formItem .formLabel
+{
+    line-height: 26px;
+    overflow: hidden;
+    width: 19%;
+    display: inline-block;
+}
+.mini-md-active .mini-col-md-6 .formItem .formInput
+{
+    overflow: hidden;
+    width: 79%;
+    display: inline-block;
+}
